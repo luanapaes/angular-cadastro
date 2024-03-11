@@ -1,0 +1,11 @@
+.btn-voltar:hover {
+    background-color: rgb(199, 225, 254);
+    cursor: pointer;
+}
+
+.btn-voltar {
+    padding: 0 10px;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all .3s ease-in;
+}

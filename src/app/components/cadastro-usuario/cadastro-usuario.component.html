@@ -1,0 +1,13 @@
+<div class="all">
+    <div class="form-cadastro">
+        <h1>Cadastre</h1>
+        <form action="" (ngSubmit)="cadastrarPessoa(pessoa)" class="container-cadastro">
+            <input type="text" placeholder="Nome" [(ngModel)]="pessoa.nome" [ngModelOptions]="{standalone: true}">
+            <input type="text" placeholder="Sobrenome" [(ngModel)]="pessoa.sobrenome"
+                [ngModelOptions]="{standalone: true}">
+            <input type="text" placeholder="Idade" [(ngModel)]="pessoa.idade" [ngModelOptions]="{standalone: true}">
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+</div>

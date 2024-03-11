@@ -1,0 +1,25 @@
+<div class="content" *ngIf="isListarUsuarios">
+
+    <table>
+        <thead>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>Idade</th>
+            <th>Opções</th>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let pessoa of pessoas$ | async">
+                <td> {{ pessoa.nome }} </td>
+                <td> {{ pessoa.sobrenome }} </td>
+                <td> {{ pessoa.idade }} </td>
+                <td class="options">
+                    <span [routerLink]="['informacao-user', pessoa.id]">Info</span>
+                    <span [routerLink]="['edit', pessoa.id]">Alterar</span>
+                    <span (click)="deletarPessoa(pessoa.id)">Remover</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <router-outlet></router-outlet>
+</div>

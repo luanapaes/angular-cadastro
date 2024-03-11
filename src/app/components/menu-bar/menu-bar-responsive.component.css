@@ -1,0 +1,18 @@
+@media only screen and (max-width: 1016px) {
+    .menu-bar__container--links{
+        width: 80%;
+    }
+    
+    .menu-bar__container--links > ul {
+       font-size: .8em;
+    }
+
+    .menu-bar__container--social-medias{
+        width: 20%;
+    }
+
+    .social-medias__list li{
+        padding-bottom: 1px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.196);
+    }
+}

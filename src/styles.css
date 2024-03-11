@@ -1,0 +1,12 @@
+/* styles.css ou styles.scss */
+
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    font-family: 'Segoe UI';
+    color: #0b0134;
+}
